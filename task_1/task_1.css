@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.content{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title{
+	font-size: 50px;
+	font-weight: bold;
+	padding:10px;
+}
+
+.btn{
+	display: inline-block;
+	font-size: 25px;
+	width:120px;
+	text-align: center;
+	margin:50px auto;
+	padding:5px 10px;
+	border:1px solid black;
+	border-radius: 5px;
+}
+.btn:hover{
+	cursor: default;
+}
+.btn:active{
+	background-color: #4368E6;
+}
+
+.titleBlue{
+	transition: color 1s ease;
+	color:#4368E6;
+}
+.titleBlack{
+	transition: color 1s ease;
+	color:black;
+}
+
+.line{
+	width:0;
+	height: 5px;
+	background-color: #4368E6;
+	margin:0 auto;
+	transition:width 1s ease;
+}
+.line-open{
+	width:100%;
+}

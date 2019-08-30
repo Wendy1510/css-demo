@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="task_1.css">
+</head>
+<body>
+	<div class="content">
+		<div id="title" class="title">前端学院</div>
+		<div class="line" id="line"></div>
+		<a class="btn" onclick="change()">切换样式</a>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	function change(){
+		var title = document.getElementById("title");
+		var line = document.getElementById("line");
+		if(title.className.indexOf("titleBlue") > -1){
+			title.classList.remove("titleBlue");
+			title.classList.add("titleBlack");
+			line.classList.remove("line-open")
+		}else{
+			title.classList.remove("titleBlack");
+			title.classList.add("titleBlue");
+			line.classList.add("line-open");
+
+		}		
+	}
+</script>
+</html>
